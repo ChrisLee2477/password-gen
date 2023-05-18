@@ -4,7 +4,7 @@ var passwordText = document.querySelector("#password");
 // 18 spec
 // 10 num
 // 26 letters
-var characters = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "#", "$", "%", "@", "^", "&", "*", "(", ")", "-", "_", "+", "=", ",", ".", "/", "?"]
+var characters = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "#", "$", "%", "@", "^", "&", "*", "(", ")", "-", "_", "+", "=", ".", "/", "?"]
 var passArray = []
 i = 0
 // Write password to the #password input
@@ -35,14 +35,14 @@ if(lowYes){
   i += 1
 }
 if(numYes){
-  numChar = characters.slice(52, 62)
+  numChar = characters.slice(52, 61)
   numCharLength = numChar.length
   newChar= numChar[Math.floor(Math.random() * numCharLength)]
   passArray.push(newChar)
   i += 1
 }
 if(speYes){
-  speicalChar = characters.slice(62)
+  speicalChar = characters.slice(61)
   speicalCharLength = speicalChar.length
   newChar= speicalChar[Math.floor(Math.random() * speicalCharLength)]
   passArray.push(newChar)
